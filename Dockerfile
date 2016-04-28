@@ -23,7 +23,7 @@ RUN chmod +x /etc/my_init.d/startup.sh
 
 
 #expose port for https service
-EXPOSE 80
+EXPOSE 8008
 
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
