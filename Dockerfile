@@ -21,6 +21,7 @@ RUN mkdir -p /etc/my_init.d
 COPY startup.sh /etc/my_init.d/startup.sh
 RUN chmod +x /etc/my_init.d/startup.sh
 
+VOLUME /var/ka-lite/.kalite/content
 
 #expose port for https service
 EXPOSE 8008
