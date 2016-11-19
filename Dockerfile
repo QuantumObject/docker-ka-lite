@@ -1,5 +1,5 @@
 #name of container: docker-ka-lite
-#versison of container: 0.1
+#versison of container: 1.1
 
 FROM quantumobject/docker-baseimage:15.10
 MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
