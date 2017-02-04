@@ -4,12 +4,14 @@
 FROM quantumobject/docker-baseimage:15.10
 MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 
+RUN  export USER=ka-lite
+
 #add repository and update the container
 #Installation of nesesary package/software for this containers...
 RUN echo "deb http://archive.ubuntu.com/ubuntu `cat /etc/container_environment/DISTRIB_CODENAME`-backports main restricted " >> /etc/apt/sources.list \
     && echo "deb http://ppa.launchpad.net/learningequality/ka-lite/ubuntu `cat /etc/container_environment/DISTRIB_CODENAME` main " >> /etc/apt/sources.list \
     && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3194DD81
-RUN apt-get update && apt-get install -y -q  ka-lite \
+RUN apt-get update && apt-get install -y -q  net-tools ka-lite \
                       && apt-get clean \
                       && rm -rf /tmp/* /var/tmp/*  \
                       && rm -rf /var/lib/apt/lists/*
