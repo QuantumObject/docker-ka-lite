@@ -1,7 +1,7 @@
 #name of container: docker-ka-lite
 #versison of container: 1.1
 
-FROM quantumobject/docker-baseimage:15.10
+FROM quantumobject/docker-baseimage:16.04
 MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 
 RUN  export USER=ka-lite
