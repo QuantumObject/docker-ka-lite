@@ -8,7 +8,7 @@ if [ -f /etc/configured ]; then
         service ka-lite start
 else
         chown -R ka-lite:nogroup /var/ka-lite/.kalite
-        service ka-lite start 
+        service ka-lite start
         update-locale
         date > /etc/configured
 fi

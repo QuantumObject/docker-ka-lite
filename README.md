@@ -8,7 +8,7 @@ Docker container for KA Lite
 
   - [Docker][3]
 
-To install docker in Ubuntu 14.04 use the commands:
+To install docker in Ubuntu 16.04 use the commands:
 
     $ sudo apt-get update
     $ sudo apt-get install docker.io
@@ -20,6 +20,10 @@ To install docker in Ubuntu 14.04 use the commands:
 To run container use the command below:
 
         $ docker run -d -p 8008:8008 quantumobject/docker-ka-lite
+        
+To update the old container with new version without deleting all learning material(videos,subtitles,etc) you can used --volumes-from options for the new container.
+
+        $ docker run -d --volumes-from old_kalite_container -p 8008:8008 quantumobject/docker-ka-lite
  
 Check port and point your browser to http://[ip]:8008/  to initially configure your container.
 
