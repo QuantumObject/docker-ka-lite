@@ -11,7 +11,7 @@ Docker container for KA Lite
 To install docker in Ubuntu 16.04 use the commands:
 
     $ sudo apt-get update
-    $ sudo apt-get install docker.io
+    $ sudo wget -qO- https://get.docker.com/ | sh
 
  To install docker in other operating systems check [docker online documentation][4]
 
