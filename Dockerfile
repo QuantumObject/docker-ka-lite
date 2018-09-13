@@ -1,7 +1,7 @@
 #name of container: docker-ka-lite
-#versison of container: 2.1
+#versison of container: 3.1
 
-FROM quantumobject/docker-baseimage:16.04
+FROM quantumobject/docker-baseimage:18.04
 MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 
 RUN  export USER=ka-lite
@@ -10,7 +10,7 @@ RUN  export USER=ka-lite
 # Installation of nesesary package/software for this containers...
 RUN echo "deb http://ppa.launchpad.net/learningequality/ka-lite/ubuntu `cat /etc/container_environment/DISTRIB_CODENAME` main " >> /etc/apt/sources.list \
     && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3194DD81
-RUN apt-get update && apt-get install -y -q  net-tools ka-lite \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q  net-tools ka-lite \
                       && apt-get clean \
                       && rm -rf /tmp/* /var/tmp/*  \
                       && rm -rf /var/lib/apt/lists/*
