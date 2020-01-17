@@ -2,7 +2,12 @@
 
 Docker container for KA Lite
 
+"KA Lite is no longer under active development
+Our focus is now on our new learning platform, Kolibri. If you’re just getting started, we highly recommend using Kolibri instead of KA Lite because it supports more content and will receive regular updates, and more ongoing support."
+
 "[KA Lite][1] is open-source software that mimics the online experience of [Khan Academy][2] for offline situations. Running KA Lite as a local server, you can watch Khan Academy videos, do Khan exercises, and track student progress -- all without needing an Internet connection!"
+
+This container will be permanently remove .. Replacement will be [quantumobject/docker-kolibri][7]   
 
 ## Install dependencies
 
@@ -44,7 +49,8 @@ For additional info about us and our projects check our site[www.quantumobject.o
 [1]:https://learningequality.org/ka-lite/
 [2]:https://www.khanacademy.org/
 [3]:https://www.docker.com/
-[4]:http://docs.docker.com/
+[4]:https://docs.docker.com/
 [5]:https://github.com/QuantumObject/docker-ka-lite/
 [6]:https://www.quantumobject.org/
+[7]:https://github.com/QuantumObject/docker-kolibri
 
