@@ -24,11 +24,11 @@ To install docker in Ubuntu 18.04 use the commands:
 
 To run container use the command below:
 
-        $ docker run -d -p 8008:8008 quantumobject/docker-ka-lite
+        $ docker run -d -p 8008:8008 --name kalite quantumobject/docker-ka-lite
         
 To update the old container with new version without deleting all learning material(videos,subtitles,etc) you can used --volumes-from options for the new container.
 
-        $ docker run -d --volumes-from old_kalite_container -p 8008:8008 quantumobject/docker-ka-lite
+        $ docker run -d --volumes-from old_kalite_container -p 8008:8008 --name kalite quantumobject/docker-ka-lite
  
 Check port and point your browser to http://[ip]:8008/  to initially configure your container.
 
